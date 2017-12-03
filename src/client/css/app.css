@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-Header {
+    height: 60px;
+    background-color: black;
+    width: 100%;
+}
+
+.App-Wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 1000px;
+    height: 100%;
+}
+
+.App-Navbar {
+    width: 100px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-height: 1000px;
+    height: 100%;
+}
+
+.Nav-Item {
+    height: 60px;
+    background-color: coral;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Nav-Item:focus,.Nav-Item:acive {
+    background-color: red;
+}
+
+.Nav-Item:hover {
+    background-color: yellow;
+}
+
+.Main-Content {
+    flex: 1;
+    background-color: bisque;
+}
+
+.screen {
+    margin: 10px;
+}
+
+.pyramide-wrapper {
+    margin-top: 40px;
+}
+
+.pyramide-content {
+    margin-top: 4px;
+}
