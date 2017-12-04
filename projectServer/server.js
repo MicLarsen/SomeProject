@@ -7,19 +7,16 @@ let Crypto = require('crypto')
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-let port = process.env.PORT || 8088
+let port = process.env.PORT || 4444
 
 var router = express.Router()
 
 router.get('/', function(req, res) {
-    res.json({ message: 'hooray! welcome to our api!' })
+    res.json({ message: 'hooray! welcome to our api!' });   
 });
 
-app.use('api',router,function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    next();
-  });
+app.use('/api', router);
+
 
 let bytes = 24
 let arraySIZE = 6
