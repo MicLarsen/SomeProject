@@ -1,0 +1,53 @@
+var express    = require('express');       
+var app        = express();                
+var bodyParser = require('body-parser');
+let Crypto = require('crypto')
+
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+let port = process.env.PORT || 8088
+
+var router = express.Router()
+
+router.get('/', function(req, res) {
+    res.json({ message: 'hooray! welcome to our api!' })
+});
+
+app.use('api',router,function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+  });
+
+let bytes = 24
+let arraySIZE = 6
+let innerArray = []
+
+
+router.get('/securerandoms',(req,res,err) => {
+    let value = withCallbacks(bytes, innerArray)
+    res.json(JSON.stringify(value))    
+})
+
+
+
+var withCallbacks = function (SIZE, array) {
+    let secureRandoms = {
+        "title": "6 Secure Randoms",
+        "randoms": []
+    }
+    let tempArray = array
+    if (array.length === arraySIZE) {
+        secureRandoms.randoms = tempArray
+        return secureRandoms
+    } else {
+
+        tempArray.push(Crypto.randomBytes(SIZE).toString('hex'))
+        withCallbacks(SIZE - 4, tempArray)
+    }
+}
+
+app.listen(port);
+console.log('Magic happens on port ' + port);

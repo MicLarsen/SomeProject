@@ -2,12 +2,16 @@ import React, { Component } from 'react'
 import { Link , BrowserRouter , Route } from 'react-router-dom'
 import Home from '../screens/home.jsx'
 import Pyramiderouter from '../screens/pyramiderouter.jsx'
+import SecureRandoms from '../../api/securerandoms.jsx'
 
 class Navbar extends Component {
 
     render() {
 
         return (
+            <div className="App">
+            <div className="App-Header"></div>        
+            
             <BrowserRouter>
             <div className="App-Wrapper">
             <div className="App-Navbar">
@@ -24,11 +28,13 @@ class Navbar extends Component {
                 </div>
                 <div className="Main-Content">
                     <Route exact path="/home" component={Home} />
-                    <Route exact path="/pyramiderouter" component={Pyramiderouter} />
+                    <Route path="/pyramiderouter" component={Pyramiderouter} />
+                    <Route path="/api/securerandoms" component={SecureRandoms} />
                   
             </div>      
             </div>
             </BrowserRouter> 
+            </div>
           )
     }
 }
