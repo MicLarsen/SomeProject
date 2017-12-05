@@ -11,13 +11,9 @@ class Withpromises extends React.Component {
     this.fetchData = this.fetchData.bind(this)
 }
 
+
 fetchData() {        
-    Axios.get('http://localhost:4444/api/securerandoms', {
-        headers: {
-            'Content-Type': 'application/jsonp',
-            
-            
-        }
+    Axios.get('localhost:4444/api/securerandoms', {
     })
     .then(function (response) {
       this.setState({data: response})

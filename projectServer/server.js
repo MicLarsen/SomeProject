@@ -2,8 +2,9 @@ var express    = require('express');
 var app        = express();                
 var bodyParser = require('body-parser');
 let Crypto = require('crypto')
+let cors = require('cors')
 
-
+app.use(cors)
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
@@ -28,13 +29,12 @@ router.get('/securerandoms',(req,res,err) => {
     res.json(JSON.stringify(value))    
 })
 
-
-
+secureRandoms = {
+    "title": "6 Secure Randoms",
+    "randoms": []
+}
 var withCallbacks = function (SIZE, array) {
-    let secureRandoms = {
-        "title": "6 Secure Randoms",
-        "randoms": []
-    }
+    
     let tempArray = array
     if (array.length === arraySIZE) {
         secureRandoms.randoms = tempArray
