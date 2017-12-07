@@ -2,13 +2,12 @@ var express    = require('express');
 var app        = express();                
 var bodyParser = require('body-parser');
 let Crypto = require('crypto')
-let cors = require('cors')
 
-app.use(cors)
+
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-let port = process.env.PORT || 4444
+let port = process.env.PORT || 8008
 
 var router = express.Router()
 
@@ -19,30 +18,33 @@ router.get('/', function(req, res) {
 app.use('/api', router);
 
 
-let bytes = 24
+let bytes = 40
 let arraySIZE = 6
-let innerArray = []
+let array = []
 
+router.get('/securerandoms',(req,res,err) => {  
+    res.set({
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+      })
+    withCallbacks(bytes, array , function(data) {
+        console.log("this is data: ")
+        console.log(data)
+        let someData = [] = data
+      res.send({
+          "title": "6 Secure Randoms",
+          "randoms": someData
+      })
+    })
+    })
 
-router.get('/securerandoms',(req,res,err) => {
-    let value = withCallbacks(bytes, innerArray)
-    res.json(JSON.stringify(value))    
-})
-
-secureRandoms = {
-    "title": "6 Secure Randoms",
-    "randoms": []
-}
-var withCallbacks = function (SIZE, array) {
-    
-    let tempArray = array
-    if (array.length === arraySIZE) {
-        secureRandoms.randoms = tempArray
-        return secureRandoms
+let withCallbacks = (size, array, callback ) => {
+    let tempArray = array 
+    if (tempArray.length === 6) {
+        callback(tempArray)
     } else {
-
-        tempArray.push(Crypto.randomBytes(SIZE).toString('hex'))
-        withCallbacks(SIZE - 4, tempArray)
+        tempArray.push(Crypto.randomBytes(size).toString('hex'))
+        withCallbacks(size - 4, tempArray)
     }
 }
 

@@ -13,7 +13,8 @@ class PyramideRouter extends Component {
           }
           this.handleChange = this.handleChange.bind(this)
     }   
-        handleChange(s) {
+        
+    handleChange(s) {
         this.setState({selected: <s.target.value/>})    
       }
 
