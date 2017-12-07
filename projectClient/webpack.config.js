@@ -5,7 +5,7 @@ let APP_DIR = path.resolve(__dirname, 'src/client/components')
 let APP_BUILD = path.resolve(__dirname, 'src/client/public')
 
 module.exports = {
-  entry: APP_DIR +  '/index.js',
+  entry: APP_DIR +  '/app.js',
   output: { 
     path: APP_BUILD, 
     filename: 'bundle.js' 
