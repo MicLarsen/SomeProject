@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import ReactDOM, { render } from 'react-dom'
 import { BrowserRouter , Route } from 'react-router-dom'
-import Home from '../screens/home.jsx'
-import Navigation from './navigation.jsx'
-import SecureRandoms from '../screens/secureRandoms.jsx'
-require('../css/app.css')
+import Home from '../screens/home'
+import Navigation from './navigation'
+import SecureRandoms from '../screens/secureRandoms'
+require('../css/app')
 
 class App extends Component {
     constructor(props) {

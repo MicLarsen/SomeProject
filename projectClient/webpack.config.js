@@ -10,6 +10,9 @@ module.exports = {
     path: APP_BUILD, 
     filename: 'bundle.js' 
   },
+  resolve: {
+    extensions: ['.js', '.jsx','.css']
+  },
   module: {
     loaders: [
       {

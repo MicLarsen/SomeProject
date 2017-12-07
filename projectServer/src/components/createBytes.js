@@ -1,15 +1,15 @@
-const crypto = require('crypto');
+let crypto = require('crypto')
 
-let createBytes = function (size, cb, result = []) {
+let createBytes = function (size, callback, result = []) {
     if (size < 2) {
-        return cb(result);
+        return callback(result)
     }
     crypto.randomBytes(size, function (err, buf) {
         if (err) {
             return console.log(err)
         }
         result.push({ "length": buf.length, "random": buf.toString('hex') })
-        createBytes(size / 2, cb, result);
+        createBytes(size / 2, callback, result);
     })  
 }
-module.exports = { createBytes: createBytes };
+module.exports = { createBytes: createBytes }

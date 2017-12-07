@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import _WithCallback from './_withcallback.jsx'
-import _WithPromises from './_withpromises.jsx'
+import _WithCallback from './_withcallback'
+import _WithPromises from './_withpromises'
 import 'react-select/dist/react-select.css'
 
 module.exports = class SecureRandoms extends Component {

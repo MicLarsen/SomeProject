@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
-import getPromise from '../components/getPromise.jsx'
+import getPromise from '../components/getPromise'
 
 module.exports = class _WithPromises extends Component {  
     constructor(props) {
@@ -13,12 +13,12 @@ module.exports = class _WithPromises extends Component {
         }
     }
 componentDidMount() {
-        promise.all(getPromise.getPromise('securerandoms')
+        getPromise.getPromise('securerandoms')
         .then((data) => {
             this.setState({result : {res : data}})
         })
     .catch(err => console.log('There was an error:' + err))
-        )}
+        }
 render() {
     return (
         <div>

@@ -1,5 +1,5 @@
 import Axios from 'axios'
-let CreateBytes = require('./createBytes.jsx')
+let CreateBytes = require('./createBytes')
 
 let getPromise = function(route) {
     console.log(route)

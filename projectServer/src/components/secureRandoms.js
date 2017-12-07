@@ -1,4 +1,4 @@
-let createBytes = require('./createBytes');
+let createBytes = require('./createBytes')
 
 let secureRandoms = function() {
     return createBytes.createBytes(64, (data) =>

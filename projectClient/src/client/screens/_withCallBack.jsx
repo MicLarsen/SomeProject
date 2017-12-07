@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-let CreateBytes = require('../components/createBytes.jsx')
+let CreateBytes = require('../components/createBytes')
 
 module.exports = class _WithCallback extends Component {  
     constructor(props) {
