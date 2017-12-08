@@ -9,7 +9,8 @@ body {
 
 .App-Header {
     height: 60px;
-    background-color: black;
+    background-color: rgb(27, 44, 90);
+    color: white;
     width: 100%;
 }
 
@@ -24,7 +25,7 @@ body {
 
 .App-Navbar {
     width: 100px;
-    background-color: blue;
+    background-color: rgba(28, 28, 221, 0.87);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -42,10 +43,22 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+.Nav-Link {
+    width: 100px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(27, 44, 90);    
+}
+.Nav-Link:visited {
+    background-color: rgb(27, 44, 90);
+    border: 1px solid rgba(28, 28, 221, 0.87);
+}
 .Nav-Item:active {
     background-color: red;
+    color: red; 
 }
+
 
 .Nav-Item:hover {
     background-color: yellow;
@@ -60,10 +73,10 @@ body {
     margin: 10px;
 }
 
-.pyramide-wrapper {
+.secureRandom-wrapper {
     margin-top: 40px;
 }
 
-.pyramide-content {
+.secureRandom-content {
     margin-top: 4px;
 }

@@ -8,7 +8,7 @@ module.exports = class SecureRandoms extends Component {
     super(props)
     this.state = {
       selected: '',
-      selectedArray: [<_WithCallback /> , <_WithPromises />]
+      selectedArray: ['Please select an option',<_WithCallback /> , <_WithPromises />]
     }
     this.handleChange = this.handleChange.bind(this)
   }   
@@ -19,12 +19,13 @@ module.exports = class SecureRandoms extends Component {
 
 render() {
   return (
-    <div className="pyramide-wrapper">
+    <div className='secureRandom-wrapper'>
       <select onChange={this.handleChange}>
-        <option value="0">With Callbacks</option> 
-        <option value="1">With Promises</option>
+        <option value='0'>Select on please</option>
+        <option value='1'>With Callbacks</option> 
+        <option value='2'>With Promises</option>
       </select>
-      <div className="pyramide-content">
+      <div className='secureRandom-content'>
         {this.state.selectedArray[this.state.selected.type]}
       </div>
     </div>
