@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Axios from 'axios'
-import getPromise from '../components/getPromise'
+import CallApi from '../components/callApi'
 
 module.exports = class _WithPromises extends Component {  
     constructor(props) {
@@ -13,9 +13,9 @@ module.exports = class _WithPromises extends Component {
         }
     }
 componentDidMount() {
-        getPromise.getPromise('securerandoms')
+        CallApi.callApi('securerandoms')
         .then((data) => {
-            this.setState({result : {res : data}})
+            this.setState({result : {randoms : data}})
         })
     .catch(err => console.log('There was an error:' + err))
         }

@@ -11,7 +11,7 @@ module.exports = {
     filename: 'bundle.js' 
   },
   resolve: {
-    extensions: ['.js', '.jsx','.css']
+    extensions: ['.js', '.jsx','.css','.sass']
   },
   module: {
     loaders: [
@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         test: /.sass?$/,
-        use: ['style-loader','css-loader','sass-loader'],
+        use: ['style-loader','sass-loader'],
       },    
     ]
   }  

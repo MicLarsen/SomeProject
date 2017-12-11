@@ -1,0 +1,46 @@
+.calculator {
+text-align: center;
+margin-left: 300px;
+width: 600px;
+height: 650px;
+border: 2px solid  black
+}
+.calc-display {
+width: 400px;
+height: 150px;
+background-color: black;
+color: white;
+line-height: 150px;
+text-align: right;
+font-size: 500%;
+}
+
+.calc-keypad {
+width: 400px;
+height: 500px;
+background-color: blue;
+
+}
+.operator-keys {
+width: 100px;
+    height:500px;
+
+}
+.input-keys {
+height: 500px;
+}
+.function-keys {
+width: 300px;
+height: 100px;
+}
+.digit-keys {
+width: 300px;
+height:400px;
+}
+.calc-key {
+width: 100px;
+height: 100px;
+}
+.key-0 {
+    width: 200px;
+}
