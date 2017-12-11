@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom'
 module.exports = class Navbar extends Component {
 render() {
     return (       
-        <div className="App-Navbar">                          
+        <div className="App-Navbar">
+            <div className={"Nav-Item page1 Nav-Item-Active"}>
+                <Link className={"Nav-Link"} to={"/fullstackjs"}>FullStack JS</Link>
+            </div>                          
             <div className={"Nav-Item page1 Nav-Item-Active"}>
                 <Link className={"Nav-Link"} to={"/todo"}>ToDo</Link>
             </div>

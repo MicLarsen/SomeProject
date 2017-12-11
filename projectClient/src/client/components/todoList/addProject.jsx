@@ -31,7 +31,7 @@ module.exports = class AddProject extends Component {
 
     render() {
         let categoryOptions = this.state.categories.map(category => {
-            return <option key={category} value='category'>{category}</option>
+            return <option key={category} value={this.value}>{category}</option>
         })
         return (
             <div className="Add-Projects">
