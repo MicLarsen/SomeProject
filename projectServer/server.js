@@ -2,7 +2,9 @@ let express = require('express')
 let app = express()
 let bodyParser = require('body-parser')
 let CreateBytes = require('./src/components/createBytes')
-let GetJokes = require('./src/components/getjokes')                  
+let GetJokes = require('./src/components/getjokes')
+let GetLearningGoals = require('./src/components/getlearninggoals')
+
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
@@ -34,6 +36,14 @@ router.get('/jokes',(req,res,err) => {
     })
     let jokes = GetJokes.getJokes()
     res.send(jokes)
+})
+router.get('/learninggoals',(req,res,err) => {
+    res.set({
+        'Access-Control-Allow-Origin': '*',
+        'Content-Type': 'application/json',
+    })
+    let learningGoals = GetLearningGoals.getLearningGoals()
+    res.send(learningGoals)
 })
 
 app.use('/api', router)
