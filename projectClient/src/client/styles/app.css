@@ -125,3 +125,22 @@ body {
  transform: translateX(-100%); 
  }
 }
+.FullstackJS-Wrapper {
+    margin-top: 30px;
+}
+.FullstackJS-Content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.Learning-Content {
+    margin-top: 30px;
+}
+.full {
+    width: 100%;
+
+}
+.thirds {
+    width: 32%;
+    float: right;
+    text-align: left;
+}

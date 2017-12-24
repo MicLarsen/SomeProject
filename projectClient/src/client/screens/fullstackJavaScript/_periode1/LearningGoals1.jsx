@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import CallApi from '../../../components/callApi'
+import Ass1 from './assignments1'
 
 module.exports = class LearningGoals1 extends Component {
 
@@ -13,7 +14,6 @@ constructor() {
     componentDidMount() {
         CallApi.callApi('learninggoals')
             .then((data) => {
-                console.log(data.data)
                 this.setState({ result: data.data})
             })
             .catch(err => console.log('There was an error:' + err))
@@ -21,7 +21,14 @@ constructor() {
 
     render() {
         return ( 
-            <div>{JSON.stringify(this.state.result,null)}</div>
+            <div className='Learning-Content'>
+                <div className='Learning-Content'>
+                    {JSON.stringify(this.state.result,null)}
+                </div>
+                <div className='Learning-Content'>
+                    <Ass1/>
+                </div>    
+            </div>
         )
     }
 }
