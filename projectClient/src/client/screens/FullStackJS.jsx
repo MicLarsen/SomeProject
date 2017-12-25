@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
-import _Periode1 from './fullstackjavascript/_periode1/learninggoals1'
-import _Periode2 from './fullstackjavascript/_periode2/learninggoals2'
-import _Periode3 from './fullstackjavascript/_periode3/learninggoals3'
-import _Periode4 from './fullstackjavascript/_periode4/learninggoals4'
-import _Periode5 from './fullstackjavascript/_periode5/learninggoals5'
+import Periode from './fullstackJavaScript/periode'
 
 module.exports = class FullStackJS extends Component {
     constructor(props) {
@@ -11,11 +7,11 @@ module.exports = class FullStackJS extends Component {
         this.state = {
             selected: '',
             selectedArray: ['Please select a Periode',
-                        <_Periode1 />, 
-                        <_Periode2 />,
-                        <_Periode3 />,
-                        <_Periode4 />,
-                        <_Periode5 />
+                        <Periode periode={1}/>, 
+                        <Periode periode={2}/>,
+                        <Periode periode={3}/>,
+                        <Periode periode={4}/>,
+                        <Periode periode={5}/>
                     ],
         }
     this.handleChange = this.handleChange.bind(this)
@@ -24,7 +20,6 @@ module.exports = class FullStackJS extends Component {
     handleChange(s) {
         this.setState({selected: <s.target.value/>})    
     }
-
     render() {
         return (
             <div className='FullstackJS-Wrapper'>

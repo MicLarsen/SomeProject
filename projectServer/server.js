@@ -37,12 +37,12 @@ router.get('/jokes',(req,res,err) => {
     let jokes = GetJokes.getJokes()
     res.send(jokes)
 })
-router.get('/learninggoals',(req,res,err) => {
+router.get('/periodes/:periode',(req,res,err) => {
     res.set({
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
     })
-    let learningGoals = GetLearningGoals.getLearningGoals()
+    let learningGoals = GetLearningGoals.getLearningGoals(req.params.periode)
     res.send(learningGoals)
 })
 
