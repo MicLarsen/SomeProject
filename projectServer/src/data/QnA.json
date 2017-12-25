@@ -1,0 +1,506 @@
+[
+    {
+        "periode:": 1,
+        "periodeTitle": "Vanilla JavaScript, es2015 ->, Node.js, Babel + Webpack and TypeScript",
+        "subjects": [
+            {
+                "title": "Explain and Reflect:",
+                "qna": [
+                    {
+                        "question": "Explain differences between Java and JavaScript. You should include both topics related to the fact that Java is a compiled language and JavaScript a scripted language, and general differences in language features.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain the two strategies for improving JavaScript: ES6 (es2015) + ES7, versus Typescript. What does it require to use these technologies: In our backend with Node, in (many different) Browsers",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain generally about node.js, and when it “makes sense” and npm, and how it “fits” into the node echo system.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain about the Event Loop in Node.js",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain (some) of the purposes with the tools Babel and WebPack, using  examples from the exercises",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain the purpose of “use strict” and also Linters, exemplified with ESLint",
+                        "answer": ""
+                    }
+                ]
+            },
+            {
+                "title": "Explain using sufficient code examples the following features in JavaScript",
+                "qna": [
+                    {
+                        "question": "Variable/function-Hoisting",
+                        "answer": ""
+                    },
+                    {
+                        "question": "this in JavaScript and how it differs from what we know from Java/.net.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Function Closures and the JavaScript Module Pattern",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Immediately-Invoked Function Expressions (IIFE)",
+                        "answer": ""
+                    },
+                    {
+                        "question": "JavaScripts Prototype",
+                        "answer": ""
+                    },
+                    {
+                        "question": "User defined Callback Functions",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain the methods map, filter and reduce",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Provide examples of user defined reusable modules implemented in Node.js",
+                        "answer": ""
+                    }
+                ]
+            },
+            {
+                "title": "ES6-7 and TypeScript",
+                "qna": [
+                    {
+                        "question": "Provide examples and explain the es2015 features: let, arrow functions, this, rest parameters, de-structuring assignments, maps/sets etc.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain and demonstrate how es2015 supports modules (import and export) similar to what is offered by NodeJS.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Provide an example of ES6 inheritance and reflect over the differences between Inheritance in Java and in ES6.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Provide examples with es6, running in a browser, using Babel and Webpack",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Provide an number of examples to demonstrate the benefits of using TypeScript, including, types, interfaces, classes and generics",
+                        "answer": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "periode:": 2,
+        "periodeTitle": "Node.js, Express + JavaScript Backend Testing, NoSQL-light and Security",
+        "subjects": [
+            {
+                "title": "Explain and Reflect:",
+                "qna": [
+                    {
+                        "question": "Why would you consider a Scripting Language as JavaScript as your Backend Platform?",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain Pros & Cons in using Node.js + Express to implement your Backend compared to a strategy using for example Java/JAX-RS/Tomcat",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Node.js uses a Single Threaded Non-blocking strategy to handle asynchronous task. Explain strategies to implement a Node.js based server architecture that still could take advantage of a multi-core Server.0",
+                        "answer": ""
+                    }
+                ]
+            },
+            {
+                "title": "Node/Express application:",
+                "qna": [
+                    {
+                        "question": "Why would you consider a Scripting Language as JavaScript as your Backend Platform?",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain Pros & Cons in using Node.js + Express to implement your Backend compared to a strategy using for example Java/JAX-RS/Tomcat",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Node.js uses a Single Threaded Non-blocking strategy to handle asynchronous task. Explain strategies to implement a Node.js based server architecture that still could take advantage of a multi-core Server.0",
+                        "answer": ""
+                    }
+                ]
+            },
+            {
+                "title": "Explain, using relevant examples",
+                "qna": [
+                    {
+                        "question": "Concepts related to testing a REST-API using Node/JavaScript + relevant packages",
+                        "answer": ""
+                    },
+                    {
+                        "question": "The Express concept; middleware.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "...how to implement sessions, and the legal implications of doing this.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain (conceptually) how you would handle sessions if you run your app in clusters to solve some of problems related to deployment.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Compare the express strategy toward (server side) templating with the one you used with Java on second semester.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Demonstrate a simple Server Side Rendering example using a technology of your own choice.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "..your strategy for implementing a REST-API with Node/Express and show how you can \"test\" all the four CRUD operations programmatically using for example the Request package.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "...about testing JavaScript code, relevant packages (Mocha etc.) and how to test asynchronous code.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "...different ways to mock out databases, HTTP-request etc.",
+                        "answer": ""
+                    }
+                ]
+            },
+            {
+                "title": "Mongo and MongoDB",
+                "qna": [
+                    {
+                        "question": "Explain, briefly, what is meant by a NoSQL database.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain Pros & Cons in using a NoSQL database like MongoDB as your data store, compared to a traditional Relational SQL Database like MySQL.",
+                        "answer": ""
+                    },
+                    {
+                        "question": " Explain how databases like MongoDB be classified in the NoSQL world",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain reasons to add a layer like Mongoose, on top on of a schema-less database like MongoDB",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain the benefits from using Mongoose, and provide an example involving all CRUD operations",
+                        "answer": ""
+                    }
+                ]
+            },
+            {
+                "title": "Basic Web Security",
+                "qna": [
+                    {
+                        "question": "Explain basic security terms like authentication, authorization, confidentiality, integrity, SSL/TLS and provide examples of how you have used them (2-3. semester related).",
+                        "answer": ""
+                    },
+                    {
+                        "question": "How can we \"prevent\" third party code used, in either our Java or NodeJS applications, from injecting dangerous code into our code base?",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain about Node tools like Helmet and nsp (the Node Security Project). What do they do, and how have you used them.",
+                        "answer": ""
+                    }
+                ]
+            },
+            {
+                "title": "Basic Web Security",
+                "qna": [
+                    {
+                        "question": "Explain basic security threads like:  Cross Site Scripting (XSS)",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain basic security threads like: Cross-Site Request Forgery (CSRF)",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain basic security threads like: SQL Injection",
+                        "answer": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "periode:": 3,
+        "periodeTitle": "Describe the term Single Page Application (SPA) and why it’s relevant for modern web-applications",
+        "subjects": [
+            {
+                "title": "Explain and Reflect:",
+                "qna": [
+                    {
+                        "question": "Describe fundamental differences between the SPA-framework/libraries AngularJS and React",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Describe the overall principles used in React to create a SPA",
+                        "answer": ""
+                    }
+                ]
+            },
+            {
+                "title": "Explain, using an example, the fundamental building blocks in React Applications like:",
+                "qna": [
+                    {
+                        "question": "JSX",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Rendering Elements",
+                        "answer": ""
+                    },
+                    {
+                        "question": " Components and Props",
+                        "answer": ""
+                    },
+                    {
+                        "question": "State and LifeCycle",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Handling Events",
+                        "answer": ""
+                    },
+                    {
+                        "question": "List and Keys",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Working with Forms",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Lifting State Up",
+                        "answer": ""
+                    }
+                ]
+            },
+            {
+                "title": "Describe tools like Babel, WebPack and create-react-app and how the fit in tointo the React-world",
+                "qna": [
+                    {
+                        "question": "Explain, using examples, about Class Components, versus pure JavaScript functions in React, and when to use them.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain the purpose of Client Side Routing in a SPA",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain, using an example of your own, the basic “building blocks” in react-router",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain what is required to use  react-router with a create-react-app project buildt from scratch",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain, using examples, how JavaScript array methods, like filter, map and (reduce) are used to generate dynamic HTML structures (tables, ul's etc.), and explain about React Keys.",
+                        "answer": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "periode:": 4,
+        "periodeTitle": "App Development with React Native",
+        "subjects": [
+            {
+                "title": "Explain and Reflect:",
+                "qna": [
+                    {
+                        "question": " the concept of the 1-2-3  problem (you need to check the slides for this phrase)",
+                        "answer": ""
+                    },
+                    {
+                        "question": "some of the benefits App-development gets by using JavaScript",
+                        "answer": ""
+                    },
+                    {
+                        "question": " the topics React, React Native and Expo and how they are connected",
+                        "answer": ""
+                    },
+                    {
+                        "question": "the concept of \"Write Once, Run anywhere\" and \"Learn once, Use Anywhere\"",
+                        "answer": ""
+                    },
+                    {
+                        "question": "the Pros & Cons of using Hybrid/HTML5 - Mobile App apps compared to Native apps",
+                        "answer": ""
+                    }
+                ]
+            },
+            {
+                "title": "Demonstrate",
+                "qna": [
+                    {
+                        "question": " live example + code, how we interact with features like camera, location, ImagePicker, video and more with React Native and Expo",
+                        "answer": ""
+                    },
+                    {
+                        "question": " using a live example, how we can debug a React Native App, without the need to install either XCode or the Android SDK.",
+                        "answer": ""
+                    },
+                    {
+                        "question": " Explain, using a working Example, the basic building blocks in a React Native/Expo application",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Demonstrate using a working example, how a React Native/Expo app can communicate with a backend. Also, either demonstrate or explain, how we can expose our localhost servers to “the outside world” while we are developing.",
+                        "answer": ""
+                    }
+                ]
+            },
+            {
+                "title": "Friends-finder / React-native Expo",
+                "qna": [
+                    {
+                        "question": " Demonstrate the application (on a real mobile device) and explain shortly about its purpose",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Briefly explain about the Mongo-indexes used on the backend (TTL, 2d)",       
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain the JavaScript code that implements the REST-API(s) used by the Client",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain the Client components in the order of where they are imported from:",
+                        "answer": ""
+                    }
+                ]
+            },
+            {
+                "title": "Graph QL / React-native Expo",
+                "qna": [
+                    {
+                        "question": " Demonstrate the application (on a real mobile device) and explain shortly about its purpose",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain and demonstrate the backend model implemented by Graphcool",       
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain shortly about GraphQL (max 3-4 minutes) and how it differs from a traditional REST API",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain the Client components in the order of where they are imported from:",
+                        "answer": ""
+                    }, 
+                    {
+                        "question": "Explain the Client Code which communicates with the Graphcool backend",
+                        "answer": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "periode:": 5,
+        "periodeTitle": "Promises, async-await, OO or Functional with JavaScript?, MobX and Redux with React",
+        "subjects": [
+            {
+                "title": "Explain about promises in ES 6 including, the problems they solve, a quick explanation of the Promise API and:",
+                "qna": [
+                    {
+                        "question": "demonstrate how to avoid the callback hell  (“Pyramid of Doom“)",
+                        "answer": ""
+                    },
+                    {
+                        "question": "demonstrate how to execute asynchronous code in serial or parallel",
+                        "answer": ""
+                    },
+                    {
+                        "question": "demonstrate how to implement our own promise-solutions",
+                        "answer": ""
+                    },
+                    {
+                        "question": "demonstrate error handling with promises",
+                        "answer": ""
+                    }
+                ]
+            },
+            {
+                "title": "Explain about JavaScripts async/await, how it relates to promises and reasons to use it compared to the plain promise API.",
+                "qna": [
+                    {
+                        "question": "Why this often is the preferred way of handling promises ",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Error handling with async/await",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Serial or parallel execution with async/await.",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain the concept of state in relation to programming generally, web-applications and React",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain about  “plain state handling” in React using Props and State",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain about MobX, and Redux and why/when such libraries makes sense.",
+                        "answer": ""
+                    }
+                ]
+            },
+            {
+                "title": "Explain, using a simple example how to use Redux. Include the following concepts:",
+                "qna": [
+                    {
+                        "question": "Immuatbility",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Single source of truth",       
+                        "answer": ""
+                    },
+                    {
+                        "question": "Actions and Reducers",
+                        "answer": ""
+                    },
+                    {
+                        "question": "How to use Redux with React",
+                        "answer": ""
+                    },
+                    {
+                        "question": "Explain and demonstrate tools to debug Redux applications, including the concept Time Traveling",
+                        "answer": ""
+                    }
+                ]
+            }
+        ]
+    }
+]
+    
+            
+           
+                        
+           
+
+            

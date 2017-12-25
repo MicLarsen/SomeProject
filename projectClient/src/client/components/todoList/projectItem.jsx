@@ -14,7 +14,7 @@ this.props.onDelete(id)
         return (
             <li className="Project">
                 <strong>{this.props.project.title}:</strong>{this.props.project.category} 
-                <a href='#' onClick={this.deleteProject.bind(this, this.props.project.id)}>X</a>  
+                <a href='#' onClick={this.deleteProject.bind(this, this.props.project.id)}>Delete</a>  
             </li>
         )
     }
