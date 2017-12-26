@@ -24,10 +24,10 @@ class App extends Component {
             <div className="App-Wrapper">
                 <_Navigation/>
                 <div className="Main-Content">
-                    <Route exact path="/fullstackjs" component={FullStackJS} />
-                    <Route exact path="/todo" component={Todo} />    
-                    <Route exact path="/calculator" component={Calculator} />
-                    <Route exact path="/securerandoms" component={SecureRandoms} />
+                    <Route path="/fullstackjs" component={FullStackJS} />
+                    <Route path="/todo" component={Todo} />    
+                    <Route path="/calculator" component={Calculator} />
+                    <Route path="/securerandoms" component={SecureRandoms} />
                 </div>
             </div>    
             </BrowserRouter>

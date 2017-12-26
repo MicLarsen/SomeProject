@@ -16404,10 +16404,10 @@ var App = function (_Component) {
                         _react2.default.createElement(
                             'div',
                             { className: 'Main-Content' },
-                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/fullstackjs', component: _fullstackjs2.default }),
-                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/todo', component: _todo2.default }),
-                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/calculator', component: _calculator2.default }),
-                            _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/securerandoms', component: _secureRandoms2.default })
+                            _react2.default.createElement(_reactRouterDom.Route, { path: '/fullstackjs', component: _fullstackjs2.default }),
+                            _react2.default.createElement(_reactRouterDom.Route, { path: '/todo', component: _todo2.default }),
+                            _react2.default.createElement(_reactRouterDom.Route, { path: '/calculator', component: _calculator2.default }),
+                            _react2.default.createElement(_reactRouterDom.Route, { path: '/securerandoms', component: _secureRandoms2.default })
                         )
                     )
                 )
