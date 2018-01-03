@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Periode from './fullstackJavaScript/periode'
+import Periode from '../components/LearningGoals/periode'
 
 module.exports = class FullStackJS extends Component {
     constructor(props) {

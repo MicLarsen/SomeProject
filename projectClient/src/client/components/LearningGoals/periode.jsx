@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import CallApi from '../../components/callApi'
-import _LearningGoals from './_LearningGoals/_learningGoals'
+import _LearningGoals from './learningGoals'
 
 module.exports = class Periode extends Component {
 

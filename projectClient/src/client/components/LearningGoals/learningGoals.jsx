@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import _QnAItem from './_QnAItem'
+import _QnAItem from './QnAItem'
 
 module.exports = class _LearningGoals extends Component {
 
