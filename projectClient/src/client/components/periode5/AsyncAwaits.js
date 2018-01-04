@@ -27,6 +27,7 @@ module.exports = class _WithPromises extends Component {
   render() {
     return (
       <div>
+      <PeriodeText assignment={this.props.assignment} />
        <pre>{JSON.stringify(this.state.AsyncedRandoms, null, 6)}</pre>
       </div>
     );
